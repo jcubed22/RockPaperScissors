@@ -1,33 +1,23 @@
 <html>
 <head>
 	<title>Rock Paper Scissors Battle Royale</title>
-	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootsrap.min.css'>
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
 </head>
 <body>
-	<h1>Rock Papaer Scissors Battle Royale</h1>
-	<h2>Player 1 VS Player 2</h2>
-	<form action='/two_player_result'>
-			<input type='image' name='player1' src='http://img4.wikia.nocookie.net/__cb20131014061946/prowrestling/images/9/9e/The_Rock_18_GD.png' value='rock' width='200px' height='200px'>
-			<button type='button' name='player1' value='paper'>
+	<div class='container'>
+		<h1>Rock Paper Scissors Battle Royale</h1>
+		<h2>Player 1, Your Move</h2>
+		<form action='/two_player_player2'>
+			<button type='submit' name='player1' value='rock'>
+				<img src='http://img4.wikia.nocookie.net/__cb20131014061946/prowrestling/images/9/9e/The_Rock_18_GD.png' width='200px' height='200px'>
+			</button>
+			<button type='submit' name='player1' value='paper'>
 				<img src='https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_(paper).png' width='200px' height='200px'>
 			</button>
-			<button type='button' name='player1' value='scissors'>
+			<button type='submit' name='player1' value='scissors'>
 				<img src='https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_(scissors).png' width='200px' height='200px'>
 			</button>
-			<br>
-			<br>
-			<br>
-			<input type='image' name='player2' src='http://img4.wikia.nocookie.net/__cb20131014061946/prowrestling/images/9/9e/The_Rock_18_GD.png' value='rock' width='200px' height='200px'>
-			<button type='button' name='player2' value='paper'>
-				<img src='https://upload.wikimedia.org/wikipedia/commons/a/af/Rock-paper-scissors_(paper).png' width='200px' height='200px'>
-			</button>
-			<button type='button' name='player2' value='scissors'>
-				<img src='https://upload.wikimedia.org/wikipedia/commons/5/5f/Rock-paper-scissors_(scissors).png' width='200px' height='200px'>
-			</button>
-			<br>
-			<br>
-			<br>
-			<button type='submit' class='btn-success'>See Who Won</button>
 		</form>
+	</div>
 </body>
 </html>
